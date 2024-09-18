@@ -1,0 +1,36 @@
+1. Commands used
+
+*.cpp -o main.exe -Ithird_party\SDL2\include -Lthird_party\SDL2\lib -lSDL2main -lSDL2 -lSDL2_image -lSDL2_ttf -lSDL2_mixer
+
+g++ *.cpp -o main.exe -Ithird_party\Taglib\include -ltag 
+
+2. OS used : Linux
+
+3. Program structure
+
+    1 - To grab and display media files path in current folder and its sub-folder
+        FileBrowser.h
+        FileBrowser.cpp
+    
+    2 - To create and handle playlists from media files path
+        PlaylistManager.h
+        PlaylistManager.cpp
+        Playlists.h
+        Playlists.cpp
+
+    3 - To show metadata of playlist and edit metadata of individual file
+        MetaData.h
+        MetaData.cpp
+
+    4 - To play music from playlist
+        AudioPlayer.h
+        AudioPlayer.cpp
+
+4. Basic usage
+
+    1 - View all available media files in current folder
+    2 - Create playlist and add media files path
+    3 - Enjoy the music
+        Up/down arrow to turn volume up/down
+        Left/right arrow to move to previous/next song in playlist
+        Space to pause/unpause
